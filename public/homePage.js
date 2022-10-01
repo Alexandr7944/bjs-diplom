@@ -21,9 +21,9 @@ const board = () => {
             ratesBoard.fillTable(data);
         }
     })
-    setInterval(board, 60000);
 }
 board();
+setInterval(board, 60000);
 
 const moneyManager = new MoneyManager;
 moneyManager.addMoneyCallback = data => {
